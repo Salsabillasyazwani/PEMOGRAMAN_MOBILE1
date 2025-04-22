@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
                 tanggalLahir.isEmpty() || alamat.isEmpty() || email.isEmpty()) {
                 Toast.makeText(this, "Harap lengkapi semua data!", Toast.LENGTH_SHORT).show()
             } else {
+                Toast.makeText(this, "selamat akun anda telah terdaftar!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, WelcomeActivity::class.java)
                 intent.putExtra("NAMA", nama)
                 intent.putExtra("NO_HP", noHp)
